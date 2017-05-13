@@ -1,12 +1,26 @@
 html{
 }
 
+a{
+	text-decoration: none !important;
+}
+h4, h5{
+	color:black !important;
+}
+h4:hover {
+	color:black !important;
+}
+/*h6{
+	padding-top:0px;
+	margin-top:0px;
+}*/
+
 body {
 	margin:0px;
 	scroll:"no";
 }
 #scene1{
-	height:5000px;
+	height:3000px;
     background: black; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(rgb(20,20,20), white); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(rgb(20,20,20), white); /* For Opera 11.1 to 12.0 */
@@ -79,9 +93,9 @@ body {
     border-top: 2px solid rgb(0, 107, 179);
 
 	font-family: 'Raleway', serif;
-	font-size: 14px;
-	/*font-size: 1.5vw;*/
-	text-align: center;
+	font-size: 18px;
+	font-size: 1.5vw;
+	/*text-align: center;*/
 	/*color: rgb(0, 107, 179);*/
 
     z-index: 1000;
@@ -89,4 +103,8 @@ body {
 .scene2content .thumbnail:hover{
 	border: 1px solid rgb(0, 107, 179);
 }
+
+.thumbnailimg{
+	width:100%;
+} 
 

@@ -3,12 +3,13 @@ function loadprotocol(){
 	console.log("Height:" + $(window).height());
 	window.scrollTo(0, 0);
 	$(".scene2content").hide();
-	$(".scene3content").hide();
-	alert("Loaded");
+	// $(".scene3content").hide();
+	// alert("Loaded");
 }
 
 //Update when scrolling
 function updatescroll(){
+	var cheat = 50;
 	var scrollpos = $(window).scrollTop()
 	var windowheight = $(window).height();
 	var scene1height = $("#scene1").height();
@@ -23,10 +24,10 @@ function updatescroll(){
 	inout("#maintitle", scrollpos, 0, scene1height);
 
 	//Scene2 Control
-	inout(".scene2content", scrollpos, scene1height, (scene1height+scene2height));
+	inout(".scene2content", scrollpos, scene1height-cheat, (scene1height+scene2height-windowheight+cheat));
 
 	//Scene3 Control
-	inout(".scene3content", scrollpos, (scene1height+scene2height), (scene1height+scene2height+scene3height));
+	// inout(".scene3content", scrollpos, (scene1height+scene2height), (scene1height+scene2height+scene3height));
 
 }
 
@@ -40,8 +41,27 @@ function inout(element, scrollpos, startx, endx){
 	}
 }
 
+//Show and hid FAQ divs
+function showandhidefaqdivs(divname){
+	// alert("AH");
+	// $(divname).show();
+	hideallfaqdetails(300);
+	$(divname).fadeIn(300);
+}
+
+function hideallfaqdetails(rate){
+	$("#q1").fadeOut(rate);
+	$("#q2").fadeOut(rate);
+	$("#q3").fadeOut(rate);
+	$("#q4").fadeOut(rate);
+	$("#q5").fadeOut(rate);
+	$("#q6").fadeOut(rate);
+	$("#q7").fadeOut(rate);
+}
+
 window.onload=loadprotocol();
 $(window).scroll(updatescroll);
+hideallfaqdetails(0);
 
 
 	// $("#maintitle").fadeOut(300);
