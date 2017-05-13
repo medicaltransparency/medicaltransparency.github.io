@@ -9,3 +9,7 @@
 * How Hospitals Work
 * End of Life Decisions
 * Medical Chatbot
+
+## How to Contribute
+* use Wiki tab are for content / discussion
+* use Project tab for to do list
