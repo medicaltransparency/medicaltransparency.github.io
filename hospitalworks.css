@@ -37,6 +37,31 @@ body{
 	left:50%;
 	transform:translate(-50%,-50%);
 }
+.elements{
+	position: fixed;
+	transform:translate(-50%,-50%);	
+}
+.textclass{
+	width:200px;
+	height:100px;
+	background-color: red;	
+}
+/*#element1{
+	text-align: center;
+	width:20px;
+	height: 20px:;
+	background-color: red;
+}
+#element2{
+	width:20px;
+	height: 20px:;
+	background-color: blue;
+}
+#element3{
+	width:20px;
+	height: 20px:;
+	background-color: green;
+}*/
 
 /*Scene3*/
 #scene3{
